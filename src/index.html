@@ -1,39 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" class="h-full w-full">
+<head >
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../dist/output.css">
 </head>
-<body class="">
-    <div class="container bg-sky-200 grid grid-cols-[1fr_4fr] grid-rows-[1fr_4fr] h-screen min-w-full">
+<body class="h-full w-full">
+    <div class="container bg-sky-100 grid grid-cols-[1fr_4fr] grid-rows-[1fr_4fr] min-w-full max-h-screen">
 
-        <div class="header grid grid-rows-2 bg-sky-100 row-start-1 row-end-2 col-start-2 col-end-3">
-            <div class="search flex"> 
-                <div class="icon">icon</div>
-                <input type="text" class="bg-sky-50 flex-1 rounded m-4 text-sky-900">
-                <div>bell</div>
+        <div class="header grid grid-rows-2 bg-sky-200 row-start-1 row-end-2 col-start-2 col-end-3 shadow-sm px-4">
+            <div class="search grid grid-cols-[8fr_1fr_1fr_1fr_1fr_1fr]"> 
+                <div class="grid grid-cols-[1fr_10fr]">
+                    <img src="icons/magnify.png" class="self-center">
+                    <input type="text" class="bg-sky-50 rounded m-4 text-sky-900 self-center">
+                </div>
+                <div class=""></div>
+                <div class=""></div>
+                <img src="icons/bell-ring-outline.png" class="self-center">
                 <div>icon</div>
-                <div>name</div>
+                <div class="self-center">Mr Haxx0r</div>
             </div>
-            <div class="grid grid-cols-[1fr_3fr_3fr_3fr]">
-                <div class="icon">icon</div>
-                <div class="greeting flex flex-col">
+            <div class="grid grid-cols-[1fr_5fr_2fr] ">
+                <div class="icon self-center place-self-right">icon</div>
+                <div class="greeting flex flex-col self-center">
                     <div class="text-sm">hi there,</div>
                     <div class="text-lg">Mr HaXX0r (@haxxorman)</div>
                 </div>
-                <div></div>
-                <div class="buttons">
-                    <button class="bg-sky-500 hover:bg-sky-700 text-white font-bold py-2 px-4 rounded-full w-24">New</button>
-                    <button class="bg-sky-500 hover:bg-sky-700 text-white font-bold py-2 px-4 rounded-full w-24">Upload</button>
-                    <button class ="bg-sky-500 hover:bg-sky-700 text-white font-bold py-2 px-4 rounded-full w-24">Share</button>
+                <div class="buttons justify-self-stretch self-center grid grid-flow-col justify-evenly">
+                    <button class="bg-sky-500 hover:bg-sky-700 text-white font-bold px-4 rounded-full w-24 h-10">New</button>
+                    <button class="bg-sky-500 hover:bg-sky-700 text-white font-bold px-4 rounded-full w-24">Upload</button>
+                    <button class ="bg-sky-500 hover:bg-sky-700 text-white font-bold px-4 rounded-full w-24">Share</button>
                 </div>
           
             </div>
         </div>
 
-        <div class="navigation bg-sky-300 row-start-1 row-end-3 grid grid-rows-[1fr_2fr_1fr] gap-10 pl-5 text-sky-50 font-bold">
+        <div class="navigation bg-sky-500 row-start-1 row-end-3 grid grid-rows-3 gap-4 pl-5 text-sky-50 font-bold">
             <div class="first row-start-1 row-end-2 pt-5">
                 Dashboard
   
@@ -51,42 +54,49 @@
             </div>
         </div>
 
-        <div class="projects bg-sky-100 row-start-2 row-end-3 col-start-2 col-end-3 grid grid-rows-2 grid-cols-[3fr_1fr]">
-            <div class="row-start-1 row-end-3 grid grid-rows-[1fr_10fr]">
-                <div class="bg-sky-700 ">headline</div>
-                <div class=" bg-sky-700 grid grid-cols-2 gap-4">
-                    <div class="bg-sky-300"></div>
-                    <div class="bg-sky-300"></div>
-                    <div class="bg-sky-300"></div>
-                    <div class="bg-sky-300"></div>
-                    <div class="bg-sky-300"></div>
-                    <div class="bg-sky-300"></div>
+        <div class="m-4 bg-sky-100 row-start-2 row-end-3 col-start-2 col-end-3 grid grid-rows-2 grid-cols-[2fr_1fr] gap-10">
+            <div class="row-start-1 row-end-3 grid grid-rows-[1fr_10fr] bg-sky-100">
+                <div class= "text-sky-900 self-end mb-2">Headline</div>
+                <div class=" grid grid-cols-2 gap-3">
+                    <div class="bg-sky-300 rounded border-l-4 border-sky-500"></div>
+                    <div class="bg-sky-300 rounded border-l-4 border-sky-500"></div>
+                    <div class="bg-sky-300 rounded border-l-4 border-sky-500"></div>
+                    <div class="bg-sky-300 rounded border-l-4 border-sky-500"></div>
+                    <div class="bg-sky-300 rounded border-l-4 border-sky-500"></div>
+                    <div class="bg-sky-300 rounded border-l-4 border-sky-500"></div>
                 </div>
             </div>
 
-            <div class="row-start-1 col-start-2 bg-sky-800 grid grid-rows-[1fr_4fr]">
-                <div class="">announcements</div>
-                <div class="grid grid-col-3">
-                    <div class="">Site</div>
-                    <div class="">Site</div>
-                    <div class="">Site</div>
+            <div class="row-start-1 col-start-2 bg-sky-100 grid grid-rows-[1fr_4fr] rounded">
+                <div class="bg-sky-100 text-sky-900 self-end mb-2">Announcements</div>
+                <div class="grid grid-col-3 bg-sky-50 p-5">
+                    <div class="border-b-2 bg-sky-50 p-2">
+                        <div class="text-left">Site Maintenance</div>
+                        <div class="text-xs">labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</div>
+                    </div>
+                    <div class="border-b-2 bg-sky-50 p-2">
+                        <div class="text-left">Community Share Day</div>
+                        <div class="text-xs"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+                    </div>
+                    <div class=" bg-sky-50 p-2">
+                        <div class="text-left">Updated Privacy Policy</div>
+                        <div class="text-xs">Mollit anim id est laborum.</div>
+                    </div>
+                    
+                    
+                    
                 </div>
             </div>
-            <div class="row-start-2 col-start-2 bg-sky-900 grid grid-rows-[1fr_4fr]">
-                <div class="">Trending</div>
-                <div class="grid grid-flow-row">
-                    <div class="">user1</div>
-                    <div class="">user1</div>
-                    <div class="">user1</div>
-                    <div class="">user1</div>
+            <div class="row-start-2 col-start-2 bg-sky-100 grid grid-rows-[1fr_4fr] rounded">
+                <div class="text-sky-900 self-end mb-2">Trending</div>
+                <div class="grid grid-flow-row bg-sky-50 ">
+                    <div class="text-xs">user1</div>
+                    <div class="text-xs">user1</div>
+                    <div class="text-xs">user1</div>
+                    <div class="text-xs">user1</div>
                 </div>
             </div>
-
-
         </div>
-
     </div>
-
-    
 </body>
 </html>
