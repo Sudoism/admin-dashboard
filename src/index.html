@@ -9,7 +9,29 @@
 <body class="">
     <div class="container bg-sky-200 grid grid-cols-[1fr_4fr] grid-rows-[1fr_4fr] h-screen min-w-full">
 
-        <div class="header bg-sky-100 row-start-1 col-start-2 col-end-3">header</div>
+        <div class="header grid grid-rows-2 bg-sky-100 row-start-1 row-end-2 col-start-2 col-end-3">
+            <div class="search flex"> 
+                <div class="icon">icon</div>
+                <input type="text" class="bg-sky-50 flex-1 rounded m-4 text-sky-900">
+                <div>bell</div>
+                <div>icon</div>
+                <div>name</div>
+            </div>
+            <div class="grid grid-cols-[1fr_3fr_3fr_3fr]">
+                <div class="icon">icon</div>
+                <div class="greeting flex flex-col">
+                    <div class="text-sm">hi there,</div>
+                    <div class="text-lg">Mr HaXX0r (@haxxorman)</div>
+                </div>
+                <div></div>
+                <div class="buttons">
+                    <button class="bg-sky-500 hover:bg-sky-700 text-white font-bold py-2 px-4 rounded-full w-24">New</button>
+                    <button class="bg-sky-500 hover:bg-sky-700 text-white font-bold py-2 px-4 rounded-full w-24">Upload</button>
+                    <button class ="bg-sky-500 hover:bg-sky-700 text-white font-bold py-2 px-4 rounded-full w-24">Share</button>
+                </div>
+          
+            </div>
+        </div>
 
         <div class="navigation bg-sky-300 row-start-1 row-end-3 grid grid-rows-[1fr_2fr_1fr] gap-10 pl-5 text-sky-50 font-bold">
             <div class="first row-start-1 row-end-2 pt-5">
@@ -29,7 +51,39 @@
             </div>
         </div>
 
-        <div class="projects bg-sky-500 row-start-2 row-end-3 col-start-2 col-end-3"></div>
+        <div class="projects bg-sky-100 row-start-2 row-end-3 col-start-2 col-end-3 grid grid-rows-2 grid-cols-[3fr_1fr]">
+            <div class="row-start-1 row-end-3 grid grid-rows-[1fr_10fr]">
+                <div class="bg-sky-700 ">headline</div>
+                <div class=" bg-sky-700 grid grid-cols-2 gap-4">
+                    <div class="bg-sky-300"></div>
+                    <div class="bg-sky-300"></div>
+                    <div class="bg-sky-300"></div>
+                    <div class="bg-sky-300"></div>
+                    <div class="bg-sky-300"></div>
+                    <div class="bg-sky-300"></div>
+                </div>
+            </div>
+
+            <div class="row-start-1 col-start-2 bg-sky-800 grid grid-rows-[1fr_4fr]">
+                <div class="">announcements</div>
+                <div class="grid grid-col-3">
+                    <div class="">Site</div>
+                    <div class="">Site</div>
+                    <div class="">Site</div>
+                </div>
+            </div>
+            <div class="row-start-2 col-start-2 bg-sky-900 grid grid-rows-[1fr_4fr]">
+                <div class="">Trending</div>
+                <div class="grid grid-flow-row">
+                    <div class="">user1</div>
+                    <div class="">user1</div>
+                    <div class="">user1</div>
+                    <div class="">user1</div>
+                </div>
+            </div>
+
+
+        </div>
 
     </div>
 
