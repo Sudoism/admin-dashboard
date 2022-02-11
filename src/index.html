@@ -11,9 +11,9 @@
 
         <div class="header grid grid-rows-2 bg-sky-200 row-start-1 row-end-2 col-start-2 col-end-3 shadow-sm px-4">
             <div class="search grid grid-cols-[8fr_1fr_1fr_1fr_1fr_1fr]"> 
-                <div class="grid grid-cols-[1fr_10fr]">
-                    <img src="icons/magnify.png" class="self-center">
-                    <input type="text" class="bg-sky-50 rounded m-4 text-sky-900 self-center">
+                <div class="flex justify-items-start ">
+                    <img src="icons/magnify.png" class="flex-none  h-fit self-center">
+                    <input type="text" class="bg-sky-50 rounded m-4 text-sky-900 flex-1">
                 </div>
                 <div class=""></div>
                 <div class=""></div>
@@ -28,35 +28,69 @@
                     <div class="text-lg">Mr HaXX0r (@haxxorman)</div>
                 </div>
                 <div class="buttons justify-self-stretch self-center grid grid-flow-col justify-evenly">
-                    <button class="bg-sky-500 hover:bg-sky-700 text-white font-bold px-4 rounded-full w-24 h-10">New</button>
-                    <button class="bg-sky-500 hover:bg-sky-700 text-white font-bold px-4 rounded-full w-24">Upload</button>
-                    <button class ="bg-sky-500 hover:bg-sky-700 text-white font-bold px-4 rounded-full w-24">Share</button>
+                    <button class="bg-sky-500 hover:bg-sky-700 text-white font-bold px-4 mx-4 rounded-full w-24 h-10">New</button>
+                    <button class="bg-sky-500 hover:bg-sky-700 text-white font-bold px-4 mx-4 rounded-full w-24">Upload</button>
+                    <button class ="bg-sky-500 hover:bg-sky-700 text-white font-bold px-4 mx-4 rounded-full w-24">Share</button>
                 </div>
           
             </div>
         </div>
 
-        <div class="navigation bg-sky-500 row-start-1 row-end-3 grid grid-rows-3 gap-4 pl-5 text-sky-50 font-bold">
-            <div class="first row-start-1 row-end-2 pt-5">
-                Dashboard
-  
+        <div class="navigation bg-sky-500 row-start-1 row-end-3 grid gap-4 content-start pl-5 text-sky-50 font-bold">
+            <div class="flex justify-items-start pt-5 pb-10">
+                <img src="icons/view-dashboard.png" alt="dashboards" class="h-10">
+                <div class="self-center ml-2">Dashboard</div>
             </div>
-            <div class="second row-start-2 row-end-3 grid justify-items-left gap-2">
-                <div>Home</div>
-                <div>profile</div>
-                <div>Messages</div>
-                <div>History</div>
-                <div>Tasks</div>
-                <div class="pb-10">Communities</div>
-                <div>Settings</div>
-                <div>Support</div>
-                <div>Privacy</div>
+
+            <div class="flex justify-items-start h-5">
+                <img src="icons/home.png" alt="Home" class="w-5 h-5">
+                <div class="ml-2">Home</div>
+            </div>
+
+            <div class="flex justify-items-start h-5">
+                <img src="icons/card-account-details-outline.png" alt="profile" class="w-5 h-5">
+                <div class="ml-2">Profiles</div>
+            </div>
+
+            <div class="flex justify-items-start">
+                <img src="icons/message-reply.png" alt="messages" class="w-5 h-5">
+                <div class="ml-2">Messages</div>
+            </div>
+
+            <div class="flex justify-items-start">
+                <img src="icons/clock-time-three.png" alt="Clock" class="w-5 h-5">
+                <div class="ml-2">History</div>
+            </div>
+
+            <div class="flex justify-items-start">
+                <img src="icons/file-multiple.png" alt="tasks" class="w-5 h-5">
+                <div class="ml-2">Tasks</div>
+            </div>
+
+            <div class="flex justify-items-start">
+                <img src="icons/account-group.png" alt="communities" class="w-5 h-5">
+                <div class="ml-2">Communities</div>
+            </div>
+
+            <div class="flex justify-items-start pt-10">
+                <img src="icons/cog.png" alt="settings" class="w-5 h-5">
+                <div class="ml-2">Settings</div>
+            </div>
+
+            <div class="flex justify-items-start">
+                <img src="icons/help-box.png" alt="help-box" class="w-5 h-5">
+                <div class="ml-2">Support</div>
+            </div>
+
+            <div class="flex justify-items-start">
+                <img src="icons/shield-check.png" alt="shield-check" class="w-5 h-5">
+                <div class="ml-2">Privacy</div>
             </div>
         </div>
 
         <div class="m-4 bg-sky-100 row-start-2 row-end-3 col-start-2 col-end-3 grid grid-rows-2 grid-cols-[2fr_1fr] gap-10">
             <div class="row-start-1 row-end-3 grid grid-rows-[1fr_10fr] bg-sky-100">
-                <div class= "text-sky-900 self-end mb-2">Headline</div>
+                <div class= "text-sky-900 self-end mb-2">Your Projects</div>
                 <div class=" grid grid-cols-2 gap-3">
                     <div class="bg-sky-300 rounded border-l-4 border-sky-500"></div>
                     <div class="bg-sky-300 rounded border-l-4 border-sky-500"></div>
