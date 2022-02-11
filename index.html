@@ -1,41 +1,230 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" class="">
+<head >
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dist/output.css">
 </head>
-<body>
-    <div class="container">
-        <div class="header">
+<body class="">
+    <div class="container bg-sky-100 grid grid-cols-[1fr_4fr] grid-rows-[1fr_6fr] min-w-full h-screen">
 
-        </div>
-        <div class="nav">
-
-        </div>
-
-        <div class="dashboard">
-            <div class="projects-label label">Your projects</div>
-            <div class="projects">
-                    <div class="card">cool project</div>
-                    <div class="card">cool project</div>
-                    <div class="card">cool project</div>
-                    <div class="card">cool project</div>
-                    <div class="card">cool project</div>
-                    <div class="card">cool project</div>
+        <div class="header grid grid-rows-2 bg-sky-200 row-start-1 row-end-2 col-start-2 col-end-3 shadow-sm px-4">
+            <div class="search grid grid-cols-[8fr_1fr_1fr_1fr_1fr_1fr]"> 
+                <div class="flex justify-items-start ">
+                    <img src="src/icons/magnify.png" class="flex-none  h-fit self-center">
+                    <input type="text" class="bg-sky-50 rounded m-4 text-sky-900 flex-1">
+                </div>
+                <div class=""></div>
+                <div class=""></div>
+                <img src="src/icons/bell-ring-outline.png" class="justify-self-end self-center">
+                <img src="src/icons/account-circle.png" alt="profile" class="h-10 place-self-center">
+                <div class="self-center">Mr Haxx0r</div>
             </div>
-            <div class="announcements-label label">Announcements</div>
-            <div class="announcements">
+            <div class="grid grid-cols-[0.5fr_5fr_2fr] ">
+                <img src="src/icons/account-circle.png" alt="" class="self-center h-15 place-self-end pr-2">
+                <div class="greeting flex flex-col self-center ">
+                    <div class="text-sm">hi there,</div>
+                    <div class="text-lg">Mr HaXX0r (@haxxorman)</div>
+                </div>
+                <div class="buttons justify-self-stretch self-center grid grid-flow-col justify-evenly">
+                    <button class="bg-sky-500 hover:bg-sky-700 text-white font-bold px-4 mx-4 rounded-full w-24 h-10">New</button>
+                    <button class="bg-sky-500 hover:bg-sky-700 text-white font-bold px-4 mx-4 rounded-full w-24">Upload</button>
+                    <button class ="bg-sky-500 hover:bg-sky-700 text-white font-bold px-4 mx-4 rounded-full w-24">Share</button>
+                </div>
+          
             </div>
-
-            <div class="trending-label label">Trending</div>
-            <div class="trending">
-
-            </div>
-
         </div>
 
+        <div class="navigation bg-sky-500 row-start-1 row-end-3 grid gap-4 content-start pl-5 text-sky-50 font-bold">
+            <div class="flex justify-items-start pt-5 pb-10">
+                <img src="src/icons/view-dashboard.png" alt="dashboards" class="h-10">
+                <div class="self-center ml-2">Dashboard</div>
+            </div>
+
+            <div class="flex justify-items-start h-5">
+                <img src="src/icons/home.png" alt="Home" class="w-5 h-5">
+                <div class="ml-2">Home</div>
+            </div>
+
+            <div class="flex justify-items-start h-5">
+                <img src="src/icons/card-account-details-outline.png" alt="profile" class="w-5 h-5">
+                <div class="ml-2">Profiles</div>
+            </div>
+
+            <div class="flex justify-items-start">
+                <img src="src/icons/message-reply.png" alt="messages" class="w-5 h-5">
+                <div class="ml-2">Messages</div>
+            </div>
+
+            <div class="flex justify-items-start">
+                <img src="src/icons/clock-time-three.png" alt="Clock" class="w-5 h-5">
+                <div class="ml-2">History</div>
+            </div>
+
+            <div class="flex justify-items-start">
+                <img src="src/icons/file-multiple.png" alt="tasks" class="w-5 h-5">
+                <div class="ml-2">Tasks</div>
+            </div>
+
+            <div class="flex justify-items-start">
+                <img src="src/icons/account-group.png" alt="communities" class="w-5 h-5">
+                <div class="ml-2">Communities</div>
+            </div>
+
+            <div class="flex justify-items-start pt-10">
+                <img src="src/icons/cog.png" alt="settings" class="w-5 h-5">
+                <div class="ml-2">Settings</div>
+            </div>
+
+            <div class="flex justify-items-start">
+                <img src="src/icons/help-box.png" alt="help-box" class="w-5 h-5">
+                <div class="ml-2">Support</div>
+            </div>
+
+            <div class="flex justify-items-start">
+                <img src="src/icons/shield-check.png" alt="shield-check" class="w-5 h-5">
+                <div class="ml-2">Privacy</div>
+            </div>
+        </div>
+
+        <div class="m-2 bg-sky-100 row-start-2 row-end-3 col-start-2 col-end-3 grid grid-rows-2 grid-cols-[3fr_1fr] gap-5 p-5 pt-0 min-h-max">
+            <div class="row-start-1 row-end-3 grid grid-rows-[1fr_10fr] bg-sky-100 ">
+                <div class= "text-sky-900 self-end mb-2">Your Projects</div>
+                <div class=" grid grid-cols-2 gap-3 grid-rows-3">
+
+                    <div class="bg-sky-300 rounded border-l-4 border-sky-500 grid p-6">
+                        <div class="place-self-start">
+                            <div class="bold">Super cool project</div>
+                            <div class="text-xs overflow-hidden text-sky-900">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                        </div>
+                        <div class="place-self-end grid grid-flow-col">
+                            <img src="src/icons/star-plus-outline.png" alt="">
+                            <img src="src/icons/eye-plus-outline.png" alt="" class="px-2">
+                            <img src="src/icons/source-fork.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="bg-sky-300 rounded border-l-4 border-sky-500 grid p-6">
+                        <div class="place-self-start">
+                            <div class="bold">Less cool project</div>
+                            <div class="text-xs overflow-hidden text-sky-900">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                        </div>
+                        <div class="place-self-end grid grid-flow-col">
+                            <img src="src/icons/star-plus-outline.png" alt="">
+                            <img src="src/icons/eye-plus-outline.png" alt="" class="px-2">
+                            <img src="src/icons/source-fork.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="bg-sky-300 rounded border-l-4 border-sky-500 grid p-6">
+                        <div class="place-self-start">
+                            <div class="bold">Impossible app</div>
+                            <div class="text-xs overflow-hidden text-sky-900">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                        </div>
+                        <div class="place-self-end grid grid-flow-col">
+                            <img src="src/icons/star-plus-outline.png" alt="">
+                            <img src="src/icons/eye-plus-outline.png" alt="" class="px-2">
+                            <img src="src/icons/source-fork.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="bg-sky-300 rounded border-l-4 border-sky-500 grid p-6">
+                        <div class="place-self-start">
+                            <div class="bold">Easy Peasy App</div>
+                            <div class="text-xs overflow-hidden text-sky-900">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                        </div>
+                        <div class="place-self-end grid grid-flow-col">
+                            <img src="src/icons/star-plus-outline.png" alt="">
+                            <img src="src/icons/eye-plus-outline.png" alt="" class="px-2">
+                            <img src="src/icons/source-fork.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="bg-sky-300 rounded border-l-4 border-sky-500 grid p-6">
+                        <div class="place-self-start">
+                            <div class="bold">Add Blocker</div>
+                            <div class="text-xs overflow-hidden text-sky-900">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                        </div>
+                        <div class="place-self-end grid grid-flow-col">
+                            <img src="src/icons/star-plus-outline.png" alt="">
+                            <img src="src/icons/eye-plus-outline.png" alt="" class="px-2">
+                            <img src="src/icons/source-fork.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="bg-sky-300 rounded border-l-4 border-sky-500 grid p-6">
+                        <div class="place-self-start">
+                            <div class="bold">Money Maker</div>
+                            <div class="text-xs overflow-hidden text-sky-900">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                        </div>
+                        <div class="place-self-end grid grid-flow-col">
+                            <img src="src/icons/star-plus-outline.png" alt="">
+                            <img src="src/icons/eye-plus-outline.png" alt="" class="px-2">
+                            <img src="src/icons/source-fork.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-start-1 col-start-2 bg-sky-100 grid grid-rows-[1fr_4fr] rounded">
+                <div class="bg-sky-100 text-sky-900 mb-2 self-end">Announcements</div>
+                <div class="grid grid-col-3 bg-sky-50">
+                    <div class="border-b-2 bg-sky-50 p-2">
+                        <div class="text-left">Site Maintenance</div>
+                        <div class="text-xs">labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</div>
+                    </div>
+                    <div class="border-b-2 bg-sky-50 p-2">
+                        <div class="text-left">Community Share Day</div>
+                        <div class="text-xs"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+                    </div>
+                    <div class=" bg-sky-50 p-2">
+                        <div class="text-left">Updated Privacy Policy</div>
+                        <div class="text-xs">Mollit anim id est laborum.</div>
+                    </div>
+                    
+                    
+                    
+                </div>
+            </div>
+            <div class="row-start-2 col-start-2 bg-sky-100 grid grid-rows-[1fr_4fr] rounded">
+                <div class="text-sky-900 self-end mb-2">Trending</div>
+                <div class="grid grid-rows-4 bg-sky-50 ">
+
+                    <div class="flex justify-start self-center pl-5">
+                        <img src="src/icons/account-circle-black.png" alt="" class="h-10 self-center">
+                        <div class="flex flex-col pl-2 pt-1">
+                            <div class="text-xs">@tegan</div>
+                            <div class="text-xs">World Peace Builder</div>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-start self-center pl-5">
+                        <img src="src/icons/account-circle-black.png" alt="" class="h-10 self-center">
+                        <div class="flex flex-col pl-2 pt-1">
+                            <div class="text-xs">@morgan</div>
+                            <div class="text-xs">Super cool project</div>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-start self-center pl-5">
+                        <img src="src/icons/account-circle-black.png" alt="" class="h-10 self-center">
+                        <div class="flex flex-col pl-2 pt-1">
+                            <div class="text-xs">@kendall</div>
+                            <div class="text-xs">Life changing app</div>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-start self-center pl-5">
+                        <img src="src/icons/account-circle-black.png" alt="" class="h-10 self-center">
+                        <div class="flex flex-col pl-2 pt-1">
+                            <div class="text-xs">@alex</div>
+                            <div class="text-xs">No traffic maker</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
